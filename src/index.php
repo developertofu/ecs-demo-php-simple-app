@@ -7,7 +7,7 @@
         <title>Simple PHP App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <style>body {margin-top: 40px; background-image: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjuz9fGidvVAhVljFQKHUmNAR8QjRwIBw&url=https%3A%2F%2Ftwitter.com%2Fronoglesby%2Fstatus%2F505041849615015936&psig=AFQjCNE7OlHqIez9FqVfYaxiWXEUPiYmLA&ust=1502949546726812;}</style>
+        <style>body {margin-top: 40px; background-image: http://i.memecaptain.com/gend_images/2Ru_CA.jpg;}</style>
         <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
         <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     </head>
