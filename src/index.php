@@ -15,24 +15,10 @@
 
     <body>
         <?php
-            $ch = curl_init();
-
-            curl_setopt($ch, CURLOPT_URL, "http://ec2-52-23-174-240.compute-1.amazonaws.com:8200/v1/secret/bleachertest/mysqlpwd");
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
-
-
-            $headers = array();
-            $headers[] = "X-Vault-Token: dd02d6f0-b4b5-6e28-18f2-192f4ac19f1b";
-            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
-            $result = curl_exec($ch);
+            echo '<p>SECRETS FROM VAULT: </p>'
+            $cmd='curl -X GET -H "x-vault-token: ba7f7548-ceba-f435-0971-b39ebdd116b6" "http://ec2-52-23-174-240.compute-1.amazonaws.com:8200/v1/secret/bleachertest/mysqlpwd" -0';
+            exec($cmd,$result);
             echo $result;
-
-            if (curl_errno($ch)) {
-                echo 'Error:' . curl_error($ch);
-            }
-            curl_close ($ch);
         ?>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
