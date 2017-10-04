@@ -16,9 +16,6 @@
     <body>
         <?php
             echo '<p>SECRETS FROM VAULT: </p>';
-            $cmd='curl -X GET -H "x-vault-token: ba7f7548-ceba-f435-0971-b39ebdd116b6" "http://ec2-52-23-174-240.compute-1.amazonaws.com:8200/v1/secret/bleachertest/mysqlpwd" -0';
-            exec($cmd,$result);
-            echo $result;
         ?>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
